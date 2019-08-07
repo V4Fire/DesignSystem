@@ -1,0 +1,15 @@
+{
+  "name": "@v4fire/design-system",
+  "description": "V4FIRE Design System",
+  "homepage": "https://github.com/V4Fire/DesignSystem/blob/master/README.md",
+  "main": "index.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "dmitrybrovka",
+    "email": "dmitrybrovka@yandex.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V4Fire/DesignSystem"
+  }
+}
