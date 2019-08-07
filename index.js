@@ -113,16 +113,15 @@ module.exports = {
     bButton: {
       mods: {
         active: {
-          blendMode: "COLOR_BURN",
+          blendMode: "color-burn",
           backgroundColor: "rgba(164, 164, 164, 1)"
         },
         hover: {
-          blendMode: "COLOR_BURN",
+          blendMode: "color-burn",
           opacity: 0.41999998688697815,
           backgroundColor: "rgba(186, 186, 186, 1)"
         },
         disabled: {
-          blendMode: "PASS_THROUGH",
           opacity: 0.41999998688697815,
           backgroundColor: "rgba(255, 255, 255, 1)"
         },
