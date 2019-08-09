@@ -18,14 +18,14 @@ module.exports = {
             placeholderStyle: "base",
             horOffset: 10,
             vertOffset: 14,
-            textHeight: 19,
+            textHeight: 16,
             height: 38,
             textStyle: "base"
           },
           l: {
             placeholderColor: "rgba(108, 117, 125, 1)",
             placeholderStyle: "big",
-            horOffset: 13,
+            horOffset: 12,
             vertOffset: 14,
             textHeight: 23,
             height: 48,
@@ -119,11 +119,12 @@ module.exports = {
         hover: {
           blendMode: "color-burn",
           opacity: 0.41999998688697815,
-          backgroundColor: "rgba(186, 186, 186, 1)"
+          backgroundColor: "rgba(186, 186, 186, 0.41999998688697815)"
         },
         disabled: {
+          blendMode: "normal",
           opacity: 0.41999998688697815,
-          backgroundColor: "rgba(255, 255, 255, 1)"
+          backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
         },
         preIcon: { iconSize: 12, offset: 4 },
         postIcon: { iconSize: 12, offset: 4 },
@@ -152,7 +153,6 @@ module.exports = {
         }
       },
       exterior: {
-        link: { color: "rgba(0, 123, 255, 1)", backgroundColor: "none" },
         dark: {
           color: "rgba(255, 255, 255, 1)",
           backgroundColor: "rgba(52, 58, 64, 1)"
@@ -277,7 +277,7 @@ module.exports = {
       fontWeight: 400,
       fontSize: 16,
       letterSpacing: 0,
-      lineHeight: "18.75px",
+      lineHeight: "16px",
       color: "rgba(33, 37, 41, 1)"
     },
     small: {
