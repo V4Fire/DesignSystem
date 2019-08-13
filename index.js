@@ -77,24 +77,24 @@ module.exports = {
           }
         },
         readonly: {
-          textColor: "rgba(108, 117, 125, 1)",
-          baseBgColor: "rgba(233, 236, 239, 1)",
-          baseBorderColor: "rgba(207, 212, 217, 1)"
+          color: "rgba(108, 117, 125, 1)",
+          backgroundColor: "rgba(233, 236, 239, 1)",
+          borderColor: "rgba(207, 212, 217, 1)"
         },
         preIcon: {
           iconSize: "11px",
           offset: "13px",
           base: {
-            bgColor: "rgba(233, 236, 239, 1)",
-            border: { width: 1, color: "rgba(207, 212, 217, 1)" }
+            backgroundColor: "rgba(233, 236, 239, 1)",
+            border: "1px solid rgba(207, 212, 217, 1)"
           }
         },
         postIcon: {
           iconSize: "11px",
           offset: "13px",
           base: {
-            bgColor: "rgba(233, 236, 239, 1)",
-            border: { width: 1, color: "rgba(207, 212, 217, 1)" }
+            backgroundColor: "rgba(233, 236, 239, 1)",
+            border: "1px solid rgba(207, 212, 217, 1)"
           }
         }
       }
@@ -108,6 +108,11 @@ module.exports = {
           backgroundColor: "rgba(164, 164, 164, 1)"
         },
         hover: {
+          blendMode: "color-burn",
+          opacity: 0.8999999761581421,
+          backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+        },
+        focus: {
           blendMode: "color-burn",
           opacity: 0.8999999761581421,
           backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
@@ -141,11 +146,6 @@ module.exports = {
             height: "48px",
             textStyle: "big"
           }
-        },
-        focus: {
-          blendMode: "color-burn",
-          opacity: 0.8999999761581421,
-          backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
         }
       },
       exterior: {
