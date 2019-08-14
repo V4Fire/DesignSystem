@@ -37,8 +37,8 @@ module.exports = {
           border: "1px solid rgba(128, 189, 255, 1)"
         },
         valid: {
-          valid: {
-            border: "1px solid rgba(40, 167, 69, 1)",
+          true: {
+            style: { border: "1px solid rgba(40, 167, 69, 1)" },
             focus: {
               boxShadow: "0px 0px 3.200000047683716px rgba(40, 167, 69, 0.25)",
               border: "1px solid rgba(40, 167, 69, 1)"
@@ -56,8 +56,8 @@ module.exports = {
               color: "rgba(40, 167, 69, 1)"
             }
           },
-          invalid: {
-            border: "1px solid rgba(220, 53, 69, 1)",
+          false: {
+            style: { border: "1px solid rgba(220, 53, 69, 1)" },
             focus: {
               boxShadow: "0px 0px 3.200000047683716px rgba(220, 53, 69, 0.25)",
               border: "1px solid rgba(220, 53, 69, 1)"
@@ -96,6 +96,12 @@ module.exports = {
             backgroundColor: "rgba(233, 236, 239, 1)",
             border: "1px solid rgba(207, 212, 217, 1)"
           }
+        }
+      },
+      block: {
+        background: {
+          border: "1px solid rgba(207, 212, 217, 1)",
+          backgroundColor: "rgba(255, 255, 255, 1)"
         }
       }
     },
