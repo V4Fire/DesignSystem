@@ -391,7 +391,7 @@ module.exports = {
           postIcon: { iconSize: "12px", offset: "4px" }
         },
         primary: {
-          backgroundColor: "rgba(0, 123, 255, 1)",
+          backgroundColor: "rgba(0, 83, 172, 1)",
           color: "rgba(255, 255, 255, 1)",
           active: {
             blendMode: "color-burn",
@@ -421,7 +421,7 @@ module.exports = {
   colors: {
     yellow: ["rgba(255, 193, 7, 1)"],
     blue: [
-      "rgba(0, 123, 255, 1)",
+      "rgba(0, 83, 172, 1)",
       "rgba(23, 162, 184, 1)",
       "rgba(128, 189, 255, 1)"
     ],
@@ -446,7 +446,7 @@ module.exports = {
         name: "Heading/1",
         style: {
           fontFamily: "Roboto",
-          fontWeight: 700,
+          fontWeight: 300,
           fontSize: "40px",
           lineHeight: "47px"
         }
