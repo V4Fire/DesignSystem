@@ -33,14 +33,14 @@ module.exports = {
           }
         },
         focus: {
-          boxShadow: "0px 0px 3.200000047683716px rgba(0, 123, 255, 0.25)",
+          boxShadow: "0px 0px 3px rgba(0, 123, 255, 0.25)",
           border: "1px solid rgba(128, 189, 255, 1)"
         },
         valid: {
           true: {
             style: { border: "1px solid rgba(40, 167, 69, 1)" },
             focus: {
-              boxShadow: "0px 0px 3.200000047683716px rgba(40, 167, 69, 0.25)",
+              boxShadow: "0px 0px 3px rgba(40, 167, 69, 0.25)",
               border: "1px solid rgba(40, 167, 69, 1)"
             },
             info: {
@@ -50,24 +50,24 @@ module.exports = {
             },
             icon: {
               name: "ok",
-              offset: { top: "11px", right: "9px" },
               width: "18px",
               height: "15.34959602355957px",
-              color: "rgba(40, 167, 69, 1)"
+              color: "rgba(40, 167, 69, 1)",
+              offset: { top: "11px", right: "9px" }
             }
           },
           false: {
             style: { border: "1px solid rgba(220, 53, 69, 1)" },
             focus: {
-              boxShadow: "0px 0px 3.200000047683716px rgba(220, 53, 69, 0.25)",
+              boxShadow: "0px 0px 3px rgba(220, 53, 69, 0.25)",
               border: "1px solid rgba(220, 53, 69, 1)"
             },
             icon: {
               name: "close",
-              offset: { top: "13px", right: "9px" },
               width: "12px",
               height: "12px",
-              color: "rgba(220, 53, 69, 1)"
+              color: "rgba(220, 53, 69, 1)",
+              offset: { top: "13px", right: "9px" }
             },
             info: {
               textStyle: "small",
@@ -99,13 +99,73 @@ module.exports = {
         }
       },
       block: {
-        background: {
-          border: "1px solid rgba(207, 212, 217, 1)",
-          backgroundColor: "rgba(255, 255, 255, 1)"
-        }
+        border: "1px solid rgba(207, 212, 217, 1)",
+        backgroundColor: "rgba(255, 255, 255, 1)"
       }
     },
-    bCheckbox: { mods: {} },
+    bCheckbox: {
+      mods: {
+        focus: {
+          checkbox: {
+            backgroundColor: "rgba(255, 255, 255, 1)",
+            border: "1px solid rgba(128, 189, 255, 1)",
+            borderRadius: "4px"
+          }
+        },
+        valid: {
+          true: {
+            style: { border: "1px solid rgba(40, 167, 69, 1)" },
+            focus: {
+              checkbox: {
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                border: "1px solid rgba(40, 167, 69, 1)",
+                borderRadius: "4px"
+              }
+            },
+            icon: {
+              name: "check",
+              width: "8px",
+              height: "6.5px",
+              color: "rgba(255, 255, 255, 1)",
+              offset: { top: "4.75px", right: "4px" }
+            }
+          },
+          false: {
+            style: { border: "1px solid rgba(220, 53, 69, 1)" },
+            focus: {
+              checkbox: {
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                border: "1px solid rgba(220, 53, 69, 1)",
+                borderRadius: "4px"
+              }
+            },
+            info: {
+              textStyle: "small",
+              color: "rgba(220, 53, 69, 1)",
+              offset: { top: "6px", left: "24px" }
+            }
+          }
+        },
+        disabled: {
+          checkbox: {
+            backgroundColor: "rgba(248, 249, 250, 1)",
+            border: "1px solid rgba(173, 181, 189, 1)",
+            borderRadius: "4px"
+          },
+          label: { color: "rgba(173, 181, 189, 1)" }
+        }
+      },
+      block: {
+        checkbox: {
+          backgroundColor: "rgba(255, 255, 255, 1)",
+          border: "1px solid rgba(173, 181, 189, 1)",
+          borderRadius: "4px"
+        },
+        label: { color: "rgba(33, 37, 41, 1)", marginLeft: "8px" },
+        textStyle: "base"
+      },
+      exterior: { switcher: {} }
+    },
     bCalendar: { mods: {} },
     bButton: {
       mods: {
@@ -115,18 +175,18 @@ module.exports = {
         },
         hover: {
           blendMode: "color-burn",
-          opacity: 0.8999999761581421,
-          backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+          opacity: 0.9,
+          backgroundColor: "rgba(186, 186, 186, 0.9)"
         },
         focus: {
           blendMode: "color-burn",
-          opacity: 0.8999999761581421,
-          backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+          opacity: 0.9,
+          backgroundColor: "rgba(186, 186, 186, 0.9)"
         },
         disabled: {
           blendMode: "normal",
-          opacity: 0.41999998688697815,
-          backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+          opacity: 0.42,
+          backgroundColor: "rgba(255, 255, 255, 0.42)"
         },
         preIcon: { iconSize: "12px", offset: "4px" },
         postIcon: { iconSize: "12px", offset: "4px" },
@@ -164,18 +224,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -189,18 +249,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -214,18 +274,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -239,18 +299,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -264,18 +324,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -289,18 +349,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -314,18 +374,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -339,18 +399,18 @@ module.exports = {
           },
           hover: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           focus: {
             blendMode: "color-burn",
-            opacity: 0.8999999761581421,
-            backgroundColor: "rgba(186, 186, 186, 0.8999999761581421)"
+            opacity: 0.9,
+            backgroundColor: "rgba(186, 186, 186, 0.9)"
           },
           disabled: {
             blendMode: "normal",
-            opacity: 0.41999998688697815,
-            backgroundColor: "rgba(255, 255, 255, 0.41999998688697815)"
+            opacity: 0.42,
+            backgroundColor: "rgba(255, 255, 255, 0.42)"
           },
           preIcon: { iconSize: "12px", offset: "4px" },
           postIcon: { iconSize: "12px", offset: "4px" }
@@ -373,7 +433,9 @@ module.exports = {
       "rgba(52, 58, 64, 1)",
       "rgba(108, 117, 125, 1)",
       "rgba(248, 249, 250, 1)",
-      "rgba(233, 236, 239, 1)"
+      "rgba(207, 212, 217, 1)",
+      "rgba(233, 236, 239, 1)",
+      "rgba(173, 181, 189, 1)"
     ]
   },
   text: {
@@ -384,33 +446,30 @@ module.exports = {
         name: "Heading/1",
         style: {
           fontFamily: "Roboto",
-          fontWeight: 400,
+          fontWeight: 700,
           fontSize: "40px",
-          lineHeight: "46.875px"
-        },
-        color: "rgba(33, 37, 41, 1)"
+          lineHeight: "47px"
+        }
       },
       {
         type: "TEXT",
         name: "Heading/2",
         style: {
           fontFamily: "Roboto",
-          fontWeight: 400,
+          fontWeight: 700,
           fontSize: "32px",
-          lineHeight: "37.5px"
-        },
-        color: "rgba(33, 37, 41, 1)"
+          lineHeight: "38px"
+        }
       },
       {
         type: "TEXT",
         name: "Heading/3",
         style: {
           fontFamily: "Roboto",
-          fontWeight: 400,
+          fontWeight: 500,
           fontSize: "28px",
-          lineHeight: "32.8125px"
-        },
-        color: "rgba(33, 37, 41, 1)"
+          lineHeight: "33px"
+        }
       },
       {
         type: "TEXT",
@@ -419,9 +478,8 @@ module.exports = {
           fontFamily: "Roboto",
           fontWeight: 400,
           fontSize: "24px",
-          lineHeight: "28.125px"
-        },
-        color: "rgba(33, 37, 41, 1)"
+          lineHeight: "28px"
+        }
       },
       {
         type: "TEXT",
@@ -430,9 +488,8 @@ module.exports = {
           fontFamily: "Roboto",
           fontWeight: 400,
           fontSize: "20px",
-          lineHeight: "23.4375px"
-        },
-        color: "rgba(33, 37, 41, 1)"
+          lineHeight: "23px"
+        }
       },
       {
         type: "TEXT",
@@ -441,9 +498,8 @@ module.exports = {
           fontFamily: "Roboto",
           fontWeight: 400,
           fontSize: "16px",
-          lineHeight: "18.75px"
-        },
-        color: "rgba(33, 37, 41, 1)"
+          lineHeight: "19px"
+        }
       }
     ],
     base: {
@@ -454,8 +510,7 @@ module.exports = {
         fontWeight: 400,
         fontSize: "16px",
         lineHeight: "16px"
-      },
-      color: "rgba(33, 37, 41, 1)"
+      }
     },
     small: {
       type: "TEXT",
@@ -464,9 +519,8 @@ module.exports = {
         fontFamily: "Roboto",
         fontWeight: 400,
         fontSize: "14px",
-        lineHeight: "16.40625px"
-      },
-      color: "rgba(33, 37, 41, 1)"
+        lineHeight: "16px"
+      }
     },
     big: {
       type: "TEXT",
@@ -475,9 +529,8 @@ module.exports = {
         fontFamily: "Roboto",
         fontWeight: 400,
         fontSize: "20px",
-        lineHeight: "23.4375px"
-      },
-      color: "rgba(33, 37, 41, 1)"
+        lineHeight: "23px"
+      }
     },
     link: {
       type: "TEXT",
@@ -487,9 +540,8 @@ module.exports = {
         fontWeight: 400,
         fontSize: "16px",
         textDecoration: "underline",
-        lineHeight: "18.75px"
-      },
-      color: "rgba(0, 123, 255, 1)"
+        lineHeight: "19px"
+      }
     }
   },
   rounding: { big: "10px", small: "4px" }
