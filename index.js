@@ -16,8 +16,8 @@ module.exports = {
           m: {
             placeholderStyle: "base",
             placeholderColor: "rgba(108,117,125,1)",
-            horOffset: "11px",
-            vertOffset: "15px",
+            horOffset: "9px",
+            vertOffset: "13px",
             textHeight: "16px",
             height: "38px",
             textStyle: "base"
