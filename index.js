@@ -16,8 +16,8 @@ module.exports = {
           m: {
             placeholderStyle: "base",
             placeholderColor: "rgba(108,117,125,1)",
-            horOffset: "10px",
-            vertOffset: "14px",
+            horOffset: "11px",
+            vertOffset: "15px",
             textHeight: "16px",
             height: "38px",
             textStyle: "base"
@@ -109,7 +109,7 @@ module.exports = {
           checkbox: {
             backgroundColor: "rgba(255,255,255,1)",
             border: "1px solid rgba(128,189,255,1)",
-            borderRadius: "4px"
+            borderRadius: "3px"
           }
         },
         valid: {
@@ -119,7 +119,7 @@ module.exports = {
               checkbox: {
                 backgroundColor: "rgba(255,255,255,1)",
                 border: "1px solid rgba(40,167,69,1)",
-                borderRadius: "4px"
+                borderRadius: "3px"
               }
             },
             icon: {
@@ -136,7 +136,7 @@ module.exports = {
               checkbox: {
                 backgroundColor: "rgba(255,255,255,1)",
                 border: "1px solid rgba(220,53,69,1)",
-                borderRadius: "4px"
+                borderRadius: "3px"
               }
             },
             info: {
@@ -150,7 +150,7 @@ module.exports = {
           checkbox: {
             backgroundColor: "rgba(248,249,250,1)",
             border: "1px solid rgba(173,181,189,1)",
-            borderRadius: "4px"
+            borderRadius: "3px"
           },
           label: { color: "rgba(173,181,189,1)" }
         }
@@ -159,7 +159,7 @@ module.exports = {
         checkbox: {
           backgroundColor: "rgba(255,255,255,1)",
           border: "1px solid rgba(173,181,189,1)",
-          borderRadius: "4px"
+          borderRadius: "3px"
         },
         label: { color: "rgba(33,37,41,1)", marginLeft: "8px" },
         textStyle: "base"
@@ -203,8 +203,8 @@ module.exports = {
         dark: {
           mods: {
             active: { backgroundColor: "rgba(0,0,0,1)" },
-            hover: { backgroundColor: "rgba(5,6,6,1)" },
-            focus: { backgroundColor: "rgba(5,6,6,1)" },
+            hover: { backgroundColor: "rgba(0,0,0,1)" },
+            focus: { backgroundColor: "rgba(0,0,0,1)" },
             disabled: { backgroundColor: "rgba(137,141,144,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -227,8 +227,8 @@ module.exports = {
         info: {
           mods: {
             active: { backgroundColor: "rgba(0,110,145,1)" },
-            hover: { backgroundColor: "rgba(2,131,161,1)" },
-            focus: { backgroundColor: "rgba(2,131,161,1)" },
+            hover: { backgroundColor: "rgba(0,128,158,1)" },
+            focus: { backgroundColor: "rgba(0,128,158,1)" },
             disabled: { backgroundColor: "rgba(120,201,214,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -239,8 +239,8 @@ module.exports = {
         warning: {
           mods: {
             active: { backgroundColor: "rgba(255,159,0,1)" },
-            hover: { backgroundColor: "rgba(255,172,1,1)" },
-            focus: { backgroundColor: "rgba(255,172,1,1)" },
+            hover: { backgroundColor: "rgba(255,170,0,1)" },
+            focus: { backgroundColor: "rgba(255,170,0,1)" },
             disabled: { backgroundColor: "rgba(255,219,111,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -251,8 +251,8 @@ module.exports = {
         danger: {
           mods: {
             active: { backgroundColor: "rgba(201,0,0,1)" },
-            hover: { backgroundColor: "rgba(208,5,7,1)" },
-            focus: { backgroundColor: "rgba(208,5,7,1)" },
+            hover: { backgroundColor: "rgba(207,0,0,1)" },
+            focus: { backgroundColor: "rgba(207,0,0,1)" },
             disabled: { backgroundColor: "rgba(235,138,147,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -263,8 +263,8 @@ module.exports = {
         success: {
           mods: {
             active: { backgroundColor: "rgba(0,118,0,1)" },
-            hover: { backgroundColor: "rgba(4,137,7,1)" },
-            focus: { backgroundColor: "rgba(4,137,7,1)" },
+            hover: { backgroundColor: "rgba(0,134,0,1)" },
+            focus: { backgroundColor: "rgba(0,134,0,1)" },
             disabled: { backgroundColor: "rgba(130,204,147,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -275,8 +275,8 @@ module.exports = {
         secondary: {
           mods: {
             active: { backgroundColor: "rgba(26,40,53,1)" },
-            hover: { backgroundColor: "rgba(59,71,82,1)" },
-            focus: { backgroundColor: "rgba(59,71,82,1)" },
+            hover: { backgroundColor: "rgba(53,66,77,1)" },
+            focus: { backgroundColor: "rgba(53,66,77,1)" },
             disabled: { backgroundColor: "rgba(170,175,180,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -287,8 +287,8 @@ module.exports = {
         primary: {
           mods: {
             active: { backgroundColor: "rgba(0,50,255,1)" },
-            hover: { backgroundColor: "rgba(0,79,255,1)" },
-            focus: { backgroundColor: "rgba(0,79,255,1)" },
+            hover: { backgroundColor: "rgba(0,74,255,1)" },
+            focus: { backgroundColor: "rgba(0,74,255,1)" },
             disabled: { backgroundColor: "rgba(107,178,255,1)" },
             preIcon: { iconSize: "12px", offset: "4px" },
             postIcon: { iconSize: "12px", offset: "4px" }
@@ -300,7 +300,8 @@ module.exports = {
     }
   },
   colors: {
-    yellow: ["rgba(255,193,7,1)"],
+    orange: ["rgba(255,193,7,1)"],
+    yellow: ["rgba(255,246,29,1)"],
     blue: ["rgba(0,123,255,1)", "rgba(23,162,184,1)", "rgba(128,189,255,1)"],
     red: ["rgba(220,53,69,1)"],
     green: ["rgba(40,167,69,1)"],
@@ -348,9 +349,9 @@ module.exports = {
     },
     heading1: {
       fontFamily: "Roboto",
-      fontWeight: 500,
-      fontSize: "48px",
-      lineHeight: "56px"
+      fontWeight: 700,
+      fontSize: "40px",
+      lineHeight: "47px"
     },
     base: {
       fontFamily: "Roboto",
@@ -378,5 +379,5 @@ module.exports = {
       lineHeight: "19px"
     }
   },
-  rounding: { big: "10px", small: "4px" }
+  rounding: { big: "8px", small: "3px" }
 };
