@@ -16,10 +16,10 @@ module.exports = {
           m: {
             placeholderStyle: "base",
             placeholderColor: "rgba(108,117,125,1)",
-            horOffset: "14px",
+            horOffset: "9px",
             vertOffset: "13px",
             textHeight: "16px",
-            height: "48px",
+            height: "38px",
             textStyle: "base"
           },
           l: {
@@ -53,7 +53,7 @@ module.exports = {
               width: "18px",
               height: "15.34959602355957px",
               color: "rgba(40,167,69,1)",
-              offset: { top: "16px", right: "9px" }
+              offset: { top: "11px", right: "9px" }
             }
           },
           false: {
@@ -67,7 +67,7 @@ module.exports = {
               width: "12px",
               height: "12px",
               color: "rgba(220,53,69,1)",
-              offset: { top: "18px", right: "9px" }
+              offset: { top: "13px", right: "9px" }
             },
             info: {
               textStyle: "small",
