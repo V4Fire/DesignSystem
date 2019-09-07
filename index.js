@@ -132,6 +132,13 @@ module.exports = {
             borderRadius: "3px"
           },
           label: { color: "rgba(173,181,189,1)" }
+        },
+        focused: {
+          checkbox: {
+            backgroundColor: "rgba(255,255,255,1)",
+            border: "1px solid rgba(128,189,255,1)",
+            borderRadius: "3px"
+          }
         }
       },
       block: {
