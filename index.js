@@ -105,6 +105,13 @@ module.exports = {
     },
     bCheckbox: {
       mods: {
+        focused: {
+          checkbox: {
+            backgroundColor: "rgba(255,255,255,1)",
+            border: "1px solid rgba(128,189,255,1)",
+            borderRadius: "8px"
+          }
+        },
         valid: {
           true: {
             style: { border: "1px solid rgba(40,167,69,1)" },
@@ -129,23 +136,16 @@ module.exports = {
           checkbox: {
             backgroundColor: "rgba(248,249,250,1)",
             border: "1px solid rgba(173,181,189,1)",
-            borderRadius: "3px"
+            borderRadius: "8px"
           },
           label: { color: "rgba(173,181,189,1)" }
-        },
-        focused: {
-          checkbox: {
-            backgroundColor: "rgba(255,255,255,1)",
-            border: "1px solid rgba(128,189,255,1)",
-            borderRadius: "3px"
-          }
         }
       },
       block: {
         checkbox: {
           backgroundColor: "rgba(255,255,255,1)",
           border: "1px solid rgba(173,181,189,1)",
-          borderRadius: "3px"
+          borderRadius: "8px"
         },
         label: { color: "rgba(33,37,41,1)", marginLeft: "8px" },
         textStyle: "base"
@@ -285,13 +285,91 @@ module.exports = {
       }
     }
   },
+  text: {
+    Heading6: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "16px",
+      lineHeight: "19px"
+    },
+    Heading5: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "20px",
+      lineHeight: "23px"
+    },
+    Heading4: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "24px",
+      lineHeight: "28px"
+    },
+    Heading3: {
+      fontFamily: "Roboto",
+      fontWeight: 500,
+      fontSize: "28px",
+      lineHeight: "33px"
+    },
+    Heading2: {
+      fontFamily: "Roboto",
+      fontWeight: 700,
+      fontSize: "32px",
+      lineHeight: "38px"
+    },
+    Heading1: {
+      fontFamily: "Roboto",
+      fontWeight: 700,
+      fontSize: "40px",
+      lineHeight: "47px"
+    },
+    Base: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "16px",
+      lineHeight: "16px"
+    },
+    Small: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "14px",
+      lineHeight: "16px"
+    },
+    BaseUnderline: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "16px",
+      textDecoration: "underline",
+      lineHeight: "19px"
+    },
+    Big: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "20px",
+      lineHeight: "23px"
+    },
+    BaseUpper: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "16px",
+      lineHeight: "19px",
+      textTransform: "uppercase"
+    },
+    BaseUpperUnderline: {
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      fontSize: "16px",
+      textDecoration: "underline",
+      lineHeight: "19px",
+      textTransform: "uppercase"
+    }
+  },
+  rounding: { small: "8px", big: "16px" },
   colors: {
-    orange: ["rgba(255,193,7,1)"],
-    yellow: ["rgba(255,246,29,1)"],
-    blue: ["rgba(0,123,255,1)", "rgba(23,162,184,1)", "rgba(128,189,255,1)"],
-    red: ["rgba(220,53,69,1)"],
     green: ["rgba(40,167,69,1)"],
-    white: ["rgba(255,255,255,1)"],
+    red: ["rgba(220,53,69,1)"],
+    yellow: ["rgba(255,246,29,1)"],
+    orange: ["rgba(255,193,7,1)"],
+    blue: ["rgba(0,123,255,1)", "rgba(23,162,184,1)", "rgba(128,189,255,1)"],
     grey: [
       "rgba(33,37,41,1)",
       "rgba(52,58,64,1)",
@@ -300,70 +378,7 @@ module.exports = {
       "rgba(207,212,217,1)",
       "rgba(233,236,239,1)",
       "rgba(173,181,189,1)"
-    ]
-  },
-  text: {
-    heading6: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "16px",
-      lineHeight: "19px"
-    },
-    heading5: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "20px",
-      lineHeight: "23px"
-    },
-    heading4: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "24px",
-      lineHeight: "28px"
-    },
-    heading3: {
-      fontFamily: "Roboto",
-      fontWeight: 500,
-      fontSize: "28px",
-      lineHeight: "33px"
-    },
-    heading2: {
-      fontFamily: "Roboto",
-      fontWeight: 700,
-      fontSize: "32px",
-      lineHeight: "38px"
-    },
-    heading1: {
-      fontFamily: "Roboto",
-      fontWeight: 700,
-      fontSize: "40px",
-      lineHeight: "47px"
-    },
-    base: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "16px",
-      lineHeight: "16px"
-    },
-    small: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "14px",
-      lineHeight: "16px"
-    },
-    big: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "20px",
-      lineHeight: "23px"
-    },
-    link: {
-      fontFamily: "Roboto",
-      fontWeight: 400,
-      fontSize: "16px",
-      textDecoration: "underline",
-      lineHeight: "19px"
-    }
-  },
-  rounding: { big: "8px", small: "3px" }
+    ],
+    white: ["rgba(255,255,255,1)"]
+  }
 };
