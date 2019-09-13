@@ -5,23 +5,23 @@ module.exports = {
       mods: {
         size: {
           s: {
-            placeholderStyle: "small",
+            placeholderStyle: "Small",
             placeholderColor: "rgba(108,117,125,1)",
             offset: { left: "14px", right: "14px", top: "7px", bottom: "8px" },
             textHeight: "16px",
             height: "31px",
-            textStyle: "small"
+            textStyle: "Small"
           },
           m: {
-            placeholderStyle: "base",
+            placeholderStyle: "Base",
             placeholderColor: "rgba(108,117,125,1)",
             offset: { left: "13px", right: "13px", top: "9px", bottom: "13px" },
             textHeight: "16px",
             height: "38px",
-            textStyle: "base"
+            textStyle: "Base"
           },
           l: {
-            placeholderStyle: "big",
+            placeholderStyle: "Big",
             placeholderColor: "rgba(108,117,125,1)",
             offset: {
               left: "14px",
@@ -31,7 +31,7 @@ module.exports = {
             },
             textHeight: "23px",
             height: "48px",
-            textStyle: "big"
+            textStyle: "Big"
           }
         },
         focused: {
@@ -44,7 +44,7 @@ module.exports = {
           true: {
             style: { border: "1px solid rgba(40,167,69,1)" },
             info: {
-              textStyle: "small",
+              textStyle: "Small",
               color: "rgba(40,167,69,1)",
               offset: { top: "4px", left: "0px" }
             },
@@ -66,7 +66,7 @@ module.exports = {
               offset: { top: "13px", right: "9px" }
             },
             info: {
-              textStyle: "small",
+              textStyle: "Small",
               color: "rgba(220,53,69,1)",
               offset: { top: "4px", left: "0px" }
             }
@@ -128,7 +128,7 @@ module.exports = {
           false: {
             style: { border: "1px solid rgba(220,53,69,1)" },
             info: {
-              textStyle: "small",
+              textStyle: "Small",
               color: "rgba(220,53,69,1)",
               offset: { top: "6px", left: "24px" }
             }
@@ -150,7 +150,7 @@ module.exports = {
           borderRadius: "4px"
         },
         label: { color: "rgba(33,37,41,1)", marginLeft: "8px" },
-        textStyle: "base"
+        textStyle: "Base"
       },
       exterior: { switcher: {} }
     },
@@ -168,19 +168,19 @@ module.exports = {
             offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
             textHeight: "17px",
             height: "38px",
-            textStyle: "base"
+            textStyle: "Base"
           },
           s: {
             offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
             textHeight: "10px",
             height: "31px",
-            textStyle: "small"
+            textStyle: "Small"
           },
           l: {
             offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
             textHeight: "27px",
             height: "48px",
-            textStyle: "big"
+            textStyle: "Big"
           }
         }
       },
@@ -333,9 +333,9 @@ module.exports = {
     },
     Heading1: {
       fontFamily: "Roboto",
-      fontWeight: 700,
-      fontSize: "40px",
-      lineHeight: "47px"
+      fontWeight: 500,
+      fontSize: "48px",
+      lineHeight: "56px"
     },
     Base: {
       fontFamily: "Roboto",
