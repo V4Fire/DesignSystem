@@ -7,8 +7,7 @@ module.exports = {
           s: {
             placeholderStyle: "small",
             placeholderColor: "rgba(108,117,125,1)",
-            horOffset: "7px",
-            vertOffset: "14px",
+            offset: { left: "14px", right: "14px", top: "7px", bottom: "8px" },
             textHeight: "16px",
             height: "31px",
             textStyle: "small"
@@ -16,8 +15,7 @@ module.exports = {
           m: {
             placeholderStyle: "base",
             placeholderColor: "rgba(108,117,125,1)",
-            horOffset: "9px",
-            vertOffset: "13px",
+            offset: { left: "13px", right: "13px", top: "9px", bottom: "13px" },
             textHeight: "16px",
             height: "38px",
             textStyle: "base"
@@ -25,8 +23,12 @@ module.exports = {
           l: {
             placeholderStyle: "big",
             placeholderColor: "rgba(108,117,125,1)",
-            horOffset: "12px",
-            vertOffset: "14px",
+            offset: {
+              left: "14px",
+              right: "14px",
+              top: "12px",
+              bottom: "13px"
+            },
             textHeight: "23px",
             height: "48px",
             textStyle: "big"
@@ -109,7 +111,7 @@ module.exports = {
           checkbox: {
             backgroundColor: "rgba(255,255,255,1)",
             border: "1px solid rgba(128,189,255,1)",
-            borderRadius: "8px"
+            borderRadius: "4px"
           }
         },
         valid: {
@@ -136,7 +138,7 @@ module.exports = {
           checkbox: {
             backgroundColor: "rgba(248,249,250,1)",
             border: "1px solid rgba(173,181,189,1)",
-            borderRadius: "8px"
+            borderRadius: "4px"
           },
           label: { color: "rgba(173,181,189,1)" }
         }
@@ -145,7 +147,7 @@ module.exports = {
         checkbox: {
           backgroundColor: "rgba(255,255,255,1)",
           border: "1px solid rgba(173,181,189,1)",
-          borderRadius: "8px"
+          borderRadius: "4px"
         },
         label: { color: "rgba(33,37,41,1)", marginLeft: "8px" },
         textStyle: "base"
@@ -163,22 +165,19 @@ module.exports = {
         postIcon: { true: { iconSize: "12px", offset: "4px" } },
         size: {
           m: {
-            horOffset: "11px",
-            vertOffset: "8px",
+            offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
             textHeight: "17px",
             height: "38px",
             textStyle: "base"
           },
           s: {
-            horOffset: "11px",
-            vertOffset: "8px",
+            offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
             textHeight: "10px",
             height: "31px",
             textStyle: "small"
           },
           l: {
-            horOffset: "11px",
-            vertOffset: "8px",
+            offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
             textHeight: "27px",
             height: "48px",
             textStyle: "big"
@@ -195,8 +194,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(52,58,64,1)",
-          color: "rgba(255,255,255,1)"
+          base: {
+            backgroundColor: "rgba(52,58,64,1)",
+            color: "rgba(255,255,255,1)"
+          }
         },
         light: {
           mods: {
@@ -207,8 +208,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(248,249,250,1)",
-          color: "rgba(33,37,41,1)"
+          base: {
+            backgroundColor: "rgba(248,249,250,1)",
+            color: "rgba(33,37,41,1)"
+          }
         },
         info: {
           mods: {
@@ -219,8 +222,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(23,162,184,1)",
-          color: "rgba(255,255,255,1)"
+          base: {
+            backgroundColor: "rgba(23,162,184,1)",
+            color: "rgba(255,255,255,1)"
+          }
         },
         warning: {
           mods: {
@@ -231,8 +236,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(255,193,7,1)",
-          color: "rgba(33,37,41,1)"
+          base: {
+            backgroundColor: "rgba(255,193,7,1)",
+            color: "rgba(33,37,41,1)"
+          }
         },
         danger: {
           mods: {
@@ -243,8 +250,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(220,53,69,1)",
-          color: "rgba(255,255,255,1)"
+          base: {
+            backgroundColor: "rgba(220,53,69,1)",
+            color: "rgba(255,255,255,1)"
+          }
         },
         success: {
           mods: {
@@ -255,8 +264,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(40,167,69,1)",
-          color: "rgba(255,255,255,1)"
+          base: {
+            backgroundColor: "rgba(40,167,69,1)",
+            color: "rgba(255,255,255,1)"
+          }
         },
         secondary: {
           mods: {
@@ -267,8 +278,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(108,117,125,1)",
-          color: "rgba(255,255,255,1)"
+          base: {
+            backgroundColor: "rgba(108,117,125,1)",
+            color: "rgba(255,255,255,1)"
+          }
         },
         primary: {
           mods: {
@@ -279,8 +292,10 @@ module.exports = {
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
-          backgroundColor: "rgba(0,123,255,1)",
-          color: "rgba(255,255,255,1)"
+          base: {
+            backgroundColor: "rgba(0,123,255,1)",
+            color: "rgba(255,255,255,1)"
+          }
         }
       }
     }
