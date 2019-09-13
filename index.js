@@ -7,17 +7,17 @@ module.exports = {
           s: {
             placeholderStyle: "Small",
             placeholderColor: "rgba(108,117,125,1)",
-            offset: { left: "14px", right: "14px", top: "7px", bottom: "8px" },
+            offset: { left: "14px", right: "14px", top: "7px", bottom: "6px" },
             textHeight: "16px",
-            height: "31px",
+            height: "29px",
             textStyle: "Small"
           },
           m: {
             placeholderStyle: "Base",
             placeholderColor: "rgba(108,117,125,1)",
-            offset: { left: "13px", right: "13px", top: "9px", bottom: "13px" },
+            offset: { left: "13px", right: "13px", top: "9px", bottom: "11px" },
             textHeight: "16px",
-            height: "38px",
+            height: "36px",
             textStyle: "Base"
           },
           l: {
@@ -27,10 +27,10 @@ module.exports = {
               left: "14px",
               right: "14px",
               top: "12px",
-              bottom: "13px"
+              bottom: "11px"
             },
             textHeight: "23px",
-            height: "48px",
+            height: "46px",
             textStyle: "Big"
           }
         },
@@ -111,7 +111,8 @@ module.exports = {
           checkbox: {
             backgroundColor: "rgba(255,255,255,1)",
             border: "1px solid rgba(128,189,255,1)",
-            borderRadius: "4px"
+            borderRadius: "4px",
+            boxShadow: "0px 0px rgba(0,123,255,0.25)"
           }
         },
         valid: {
