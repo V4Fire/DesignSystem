@@ -158,10 +158,10 @@ module.exports = {
     bCalendar: { mods: {} },
     bButton: {
       mods: {
-        active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-        hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-        focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-        disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+        active: { true: { backgroundColor: "rgba(255,255,255,1)" } },
+        hover: { true: { backgroundColor: "rgba(255,255,255,1)" } },
+        focused: { true: { backgroundColor: "rgba(255,255,255,1)" } },
+        disabled: { true: { backgroundColor: "rgba(255,255,255,1)" } },
         preIcon: { true: { iconSize: "12px", offset: "4px" } },
         postIcon: { true: { iconSize: "12px", offset: "4px" } },
         size: {
@@ -191,7 +191,7 @@ module.exports = {
             active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
             hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
             focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            disabled: { true: { backgroundColor: "rgba(137,141,144,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -202,10 +202,10 @@ module.exports = {
         },
         light: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(244,246,247,1)" } },
+            hover: { true: { backgroundColor: "rgba(245,247,248,1)" } },
+            focused: { true: { backgroundColor: "rgba(245,247,248,1)" } },
+            disabled: { true: { backgroundColor: "rgba(251,252,252,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -216,10 +216,10 @@ module.exports = {
         },
         info: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(0,110,145,1)" } },
+            hover: { true: { backgroundColor: "rgba(0,128,158,1)" } },
+            focused: { true: { backgroundColor: "rgba(0,128,158,1)" } },
+            disabled: { true: { backgroundColor: "rgba(120,201,214,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -230,10 +230,10 @@ module.exports = {
         },
         warning: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(255,159,0,1)" } },
+            hover: { true: { backgroundColor: "rgba(255,170,0,1)" } },
+            focused: { true: { backgroundColor: "rgba(255,170,0,1)" } },
+            disabled: { true: { backgroundColor: "rgba(255,219,111,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -244,10 +244,10 @@ module.exports = {
         },
         danger: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(201,0,0,1)" } },
+            hover: { true: { backgroundColor: "rgba(207,0,0,1)" } },
+            focused: { true: { backgroundColor: "rgba(207,0,0,1)" } },
+            disabled: { true: { backgroundColor: "rgba(235,138,147,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -258,10 +258,10 @@ module.exports = {
         },
         success: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(0,118,0,1)" } },
+            hover: { true: { backgroundColor: "rgba(0,134,0,1)" } },
+            focused: { true: { backgroundColor: "rgba(0,134,0,1)" } },
+            disabled: { true: { backgroundColor: "rgba(130,204,147,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -272,10 +272,10 @@ module.exports = {
         },
         secondary: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(26,40,53,1)" } },
+            hover: { true: { backgroundColor: "rgba(53,66,77,1)" } },
+            focused: { true: { backgroundColor: "rgba(53,66,77,1)" } },
+            disabled: { true: { backgroundColor: "rgba(170,175,180,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
@@ -286,10 +286,10 @@ module.exports = {
         },
         primary: {
           mods: {
-            active: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            hover: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            focused: { true: { backgroundColor: "rgba(0,0,0,1)" } },
-            disabled: { true: { backgroundColor: "rgba(107,107,107,1)" } },
+            active: { true: { backgroundColor: "rgba(0,50,255,1)" } },
+            hover: { true: { backgroundColor: "rgba(0,74,255,1)" } },
+            focused: { true: { backgroundColor: "rgba(0,74,255,1)" } },
+            disabled: { true: { backgroundColor: "rgba(107,178,255,1)" } },
             preIcon: { true: { iconSize: "12px", offset: "4px" } },
             postIcon: { true: { iconSize: "12px", offset: "4px" } }
           },
