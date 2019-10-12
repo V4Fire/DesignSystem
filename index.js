@@ -1,23 +1,89 @@
 module.exports = {
   components: {
-    bRadioButton: { mods: {} },
+    bRadioButton: {
+      mods: {
+        focused: {
+          true: {
+            checkbox: {
+              width: "16px",
+              height: "16px",
+              border: "1px solid rgba(128,189,255,1)",
+              borderRadius: "16px",
+              backgroundColor: "rgba(255,255,255,1)",
+              boxShadow: "0px 0px rgba(0,123,255,0.25)"
+            }
+          }
+        },
+        checked: {
+          true: {
+            checkbox: {
+              width: "16px",
+              height: "16px",
+              border: "1px solid rgba(0,123,255,1)",
+              borderRadius: "16px",
+              backgroundColor: "rgba(0,123,255,1)"
+            },
+            check: {
+              width: "8px",
+              height: "8px",
+              borderRadius: "16px",
+              color: "rgba(255,255,255,1)"
+            }
+          }
+        },
+        valid: {
+          true: { style: { border: "1px solid rgba(40,167,69,1)" } },
+          false: {
+            style: { border: "1px solid rgba(220,53,69,1)" },
+            info: {
+              textStyle: "Small",
+              color: "rgba(220,53,69,1)",
+              offset: { top: "6px", left: "24px" }
+            }
+          }
+        },
+        disabled: {
+          true: {
+            checkbox: {
+              width: "16px",
+              height: "16px",
+              border: "1px solid rgba(173,181,189,1)",
+              borderRadius: "16px",
+              backgroundColor: "rgba(248,249,250,1)"
+            },
+            label: { color: "rgba(173,181,189,1)" }
+          }
+        }
+      },
+      block: {
+        checkbox: {
+          width: "16px",
+          height: "16px",
+          border: "1px solid rgba(173,181,189,1)",
+          borderRadius: "16px",
+          backgroundColor: "rgba(255,255,255,1)"
+        },
+        label: { color: "rgba(33,37,41,1)", marginLeft: "8px" },
+        textStyle: "Base"
+      }
+    },
     bInput: {
       mods: {
         size: {
           s: {
             placeholderStyle: "Small",
             placeholderColor: "rgba(108,117,125,1)",
-            offset: { left: "14px", right: "14px", top: "7px", bottom: "6px" },
-            textHeight: "16px",
-            height: "29px",
+            offset: { left: "14px", right: "14px", top: "6px", bottom: "7px" },
+            lineHeight: "16px",
+            height: "31px",
             textStyle: "Small"
           },
           m: {
             placeholderStyle: "Base",
             placeholderColor: "rgba(108,117,125,1)",
-            offset: { left: "13px", right: "13px", top: "9px", bottom: "11px" },
-            textHeight: "16px",
-            height: "36px",
+            offset: { left: "13px", right: "13px", top: "8px", bottom: "12px" },
+            lineHeight: "16px",
+            height: "38px",
             textStyle: "Base"
           },
           l: {
@@ -26,11 +92,11 @@ module.exports = {
             offset: {
               left: "14px",
               right: "14px",
-              top: "12px",
-              bottom: "11px"
+              top: "11px",
+              bottom: "12px"
             },
-            textHeight: "23px",
-            height: "46px",
+            lineHeight: "23px",
+            height: "48px",
             textStyle: "Big"
           }
         },
@@ -105,14 +171,36 @@ module.exports = {
         backgroundColor: "rgba(255,255,255,1)"
       }
     },
+    bCircularProgress: { mods: {} },
     bCheckbox: {
       mods: {
         focused: {
-          checkbox: {
-            backgroundColor: "rgba(255,255,255,1)",
-            border: "1px solid rgba(128,189,255,1)",
-            borderRadius: "4px",
-            boxShadow: "0px 0px rgba(0,123,255,0.25)"
+          true: {
+            checkbox: {
+              width: "16px",
+              height: "16px",
+              border: "1px solid rgba(128,189,255,1)",
+              borderRadius: "4px",
+              backgroundColor: "rgba(255,255,255,1)",
+              boxShadow: "0px 0px rgba(0,123,255,0.25)"
+            }
+          }
+        },
+        checked: {
+          true: {
+            checkbox: {
+              width: "16px",
+              height: "16px",
+              border: "1px solid rgba(0,123,255,1)",
+              borderRadius: "4px",
+              backgroundColor: "rgba(0,123,255,1)"
+            },
+            check: {
+              width: "8px",
+              height: "6.5px",
+              borderRadius: "none",
+              color: "rgba(255,255,255,1)"
+            }
           }
         },
         valid: {
@@ -136,24 +224,55 @@ module.exports = {
           }
         },
         disabled: {
-          checkbox: {
-            backgroundColor: "rgba(248,249,250,1)",
-            border: "1px solid rgba(173,181,189,1)",
-            borderRadius: "4px"
-          },
-          label: { color: "rgba(173,181,189,1)" }
+          true: {
+            checkbox: {
+              width: "16px",
+              height: "16px",
+              border: "1px solid rgba(173,181,189,1)",
+              borderRadius: "4px",
+              backgroundColor: "rgba(248,249,250,1)"
+            },
+            label: { color: "rgba(173,181,189,1)" },
+            check: {
+              width: "8px",
+              height: "6.5px",
+              borderRadius: "none",
+              color: "rgba(255,255,255,1)"
+            }
+          }
         }
       },
       block: {
         checkbox: {
-          backgroundColor: "rgba(255,255,255,1)",
+          width: "16px",
+          height: "16px",
           border: "1px solid rgba(173,181,189,1)",
-          borderRadius: "4px"
+          borderRadius: "4px",
+          backgroundColor: "rgba(255,255,255,1)"
         },
         label: { color: "rgba(33,37,41,1)", marginLeft: "8px" },
         textStyle: "Base"
       },
-      exterior: { switcher: {} }
+      exterior: {
+        switcher: {
+          block: {
+            checkbox: {
+              width: "28px",
+              height: "16px",
+              border: "1px solid rgba(173,181,189,1)",
+              borderRadius: "8px",
+              backgroundColor: "rgba(255,255,255,1)"
+            },
+            check: {
+              width: "12px",
+              height: "12px",
+              borderRadius: "16px",
+              color: "rgba(173,181,189,1)"
+            },
+            label: { color: "rgba(33,37,41,1)" }
+          }
+        }
+      }
     },
     bCalendar: { mods: {} },
     bButton: {
@@ -166,20 +285,20 @@ module.exports = {
         postIcon: { true: { iconSize: "12px", offset: "4px" } },
         size: {
           m: {
-            offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
-            textHeight: "17px",
+            offset: { left: "8px", right: "8px", top: "10px", bottom: "9px" },
+            lineHeight: "17px",
             height: "38px",
             textStyle: "Base"
           },
           s: {
-            offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
-            textHeight: "10px",
+            offset: { left: "8px", right: "8px", top: "10px", bottom: "9px" },
+            lineHeight: "10px",
             height: "31px",
             textStyle: "Small"
           },
           l: {
-            offset: { left: "8px", right: "8px", top: "11px", bottom: "10px" },
-            textHeight: "27px",
+            offset: { left: "8px", right: "8px", top: "10px", bottom: "9px" },
+            lineHeight: "27px",
             height: "48px",
             textStyle: "Big"
           }
@@ -302,31 +421,31 @@ module.exports = {
     }
   },
   text: {
-    Heading6: {
+    "Heading-6": {
       fontFamily: "Roboto",
       fontWeight: 400,
       fontSize: "16px",
       lineHeight: "19px"
     },
-    Heading5: {
+    "Heading-5": {
       fontFamily: "Roboto",
       fontWeight: 400,
       fontSize: "20px",
       lineHeight: "23px"
     },
-    Heading4: {
+    "Heading-4": {
       fontFamily: "Roboto",
       fontWeight: 400,
       fontSize: "24px",
       lineHeight: "28px"
     },
-    Heading3: {
+    "Heading-3": {
       fontFamily: "Roboto",
       fontWeight: 500,
       fontSize: "28px",
       lineHeight: "33px"
     },
-    Heading2: {
+    "Heading-2": {
       fontFamily: "Roboto",
       fontWeight: 700,
       fontSize: "32px",
@@ -335,8 +454,8 @@ module.exports = {
     Heading1: {
       fontFamily: "Roboto",
       fontWeight: 500,
-      fontSize: "48px",
-      lineHeight: "56px"
+      fontSize: "44px",
+      lineHeight: "52px"
     },
     Base: {
       fontFamily: "Roboto",
@@ -350,7 +469,7 @@ module.exports = {
       fontSize: "14px",
       lineHeight: "16px"
     },
-    BaseUnderline: {
+    "Base-Underline": {
       fontFamily: "Roboto",
       fontWeight: 400,
       fontSize: "16px",
@@ -363,14 +482,14 @@ module.exports = {
       fontSize: "20px",
       lineHeight: "23px"
     },
-    BaseUpper: {
+    "Base-Upper": {
       fontFamily: "Roboto",
       fontWeight: 400,
       fontSize: "16px",
       lineHeight: "19px",
       textTransform: "uppercase"
     },
-    BaseUpperUnderline: {
+    "Base-Upper-Underline": {
       fontFamily: "Roboto",
       fontWeight: 400,
       fontSize: "16px",
