@@ -3,6 +3,7 @@
   "description": "V4FIRE Design System",
   "homepage": "https://github.com/V4Fire/DesignSystem/blob/master/README.md",
   "main": "index.js",
+  "license": "MIT",
   "version": "0.0.1",
   "author": {
     "name": "dmitrybrovka",
